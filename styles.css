@@ -814,7 +814,7 @@ body.text-edit-mode .control-btn#textEditToggle {
 
 .priority-card__title {
   margin: 0;
-  font-size: 1.85rem;
+  font-size: 1.35rem;
   font-weight: 800;
   line-height: 1.2;
   color: #fff;
@@ -823,7 +823,7 @@ body.text-edit-mode .control-btn#textEditToggle {
 .priority-card__intro {
   margin: 0;
   padding: 26px 30px 18px;
-  font-size: 1.22rem;
+  font-size: 1.05rem;
   line-height: 1.5;
   color: var(--color-ink, #2F3526);
   font-weight: 700;
@@ -836,7 +836,7 @@ body.text-edit-mode .control-btn#textEditToggle {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  font-size: 1.18rem;
+  font-size: 1.0rem;
   line-height: 1.55;
   color: var(--color-ink, #2F3526);
   flex: 1;
@@ -1337,12 +1337,34 @@ body.text-edit-mode .control-btn#textEditToggle {
   margin-top: 4px;
 }
 
+.slide__project-footnotes {
+  list-style: none;
+  margin: auto 0 0;
+  padding: 0;
+}
+
+.slide__project-footnotes li {
+  font-size: 0.72rem;
+  font-style: italic;
+  color: var(--color-muted);
+  line-height: 1.45;
+  padding: 1px 0;
+}
+
 .slide__chapter-caption {
   margin: auto 0 0;
   padding-top: 10px;
   color: var(--color-muted);
   border-top: 1px solid rgba(72, 83, 48, 0.1);
   font-size: 0.95rem;
+}
+
+.slide__chapter-caption:empty {
+  display: none;
+}
+
+.slide__project-footnotes + .slide__chapter-caption:empty {
+  display: none;
 }
 
 body.text-edit-mode [data-editable="true"].is-text-editable {

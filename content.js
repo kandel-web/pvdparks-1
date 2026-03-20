@@ -235,7 +235,7 @@ window.SITE_CONTENT = {
   ui: {
     backToMap:              "Back to Map",
     closeModal:             "Close modal",
-    proposedImprovements:   "Proposed Improvements",
+    proposedImprovements:   "Proposed Projects",
     implementationNotes:    "Implementation Notes",
     noImprovementsListed:   "No improvements listed.",
     noNotesAvailable:       "No notes available.",
@@ -333,10 +333,14 @@ window.SITE_CONTENT = {
         "RWP Cunliff Boardwalk \u2013 $2,265,000",
         "Interior Renovations at the Museum of Natural History \u2013 $73,000",
         "Installation of Fitness Equipment in RWP - $40,000",
-        "Carousel Roof and Painting - $200,000 (funded per MOU with RIZS)",
-        "Irrigation at the Botanical Center (inhouse repair) - $40,000",
-        "Museum Plaster (inhouse repair) - $40,000",
-        "Boathouse Ceiling Repairs (inhouse repair) - $40,000"
+        "Carousel Roof and Painting - $200,000*",
+        "Irrigation at the Botanical Center - $40,000**",
+        "Museum Plaster - $40,000**",
+        "Boathouse Ceiling Repairs- $40,000**"
+      ],
+      footnotes: [
+        "* Funded through the RIZS",
+        "** In-house repair"
       ]
     },
     capitalVisual: {
@@ -495,7 +499,7 @@ window.SITE_CONTENT = {
       },
       newsletterEmbed: {
         url: "https://www.rwpconservancy.org/march-news-2026/",
-        label: "RWP Conservancy Newsletter"
+        label: "Newsletter"
       },
       visual: {
         type: "instagram-embed",
@@ -645,7 +649,7 @@ window.SITE_CONTENT = {
               zoom: { scale: 3.0, center: [32.50, 28.75] },
               details: {
                 "Location": "Mashapaug Pond",
-                "Type of Improvement": "A master planning effort that will address a range of community priorities, including integration of green infrastructure, educational components, trails and recreational features, and waterfront access enhancements."
+                "Type of Improvement": "Create a cohesive, long-term vision that restores ecological function and expands recreational and educational opportunities by intentionally linking water quality improvements, public programming, and physical connections along Mashapaug Pond."
               }
             },
             {
@@ -834,9 +838,10 @@ window.SITE_CONTENT = {
         navLabel: "Ornamentals",
         navDepth: 1,
         navGroup: "Planting",
-        headline: "Ornamentals",
+        headline: "Formal",
         bullets: [
-          "Formal planting design to highlight Victorian garden era"
+          "Entrances and gateways are ideal locations for formal plantings and ornamental features.",
+          "Symmetrical plantings and defined pathways enhance the architectural character of historic buildings like the Casino and Museum."
         ],
         visual: {
           type: "placeholder",

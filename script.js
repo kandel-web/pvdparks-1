@@ -444,6 +444,10 @@
       } else {
         bodyRight = renderVisualCardHtml(chapter, index);
       }
+      const projectFootnotesHtml = chapter.projectList && Array.isArray(chapter.projectList.footnotes) && chapter.projectList.footnotes.length ? `
+            <ul class="slide__project-footnotes">
+              ${chapter.projectList.footnotes.map((fn) => `<li>${escapeHtml(fn)}</li>`).join('')}
+            </ul>` : '';
       const projectListHtml = chapter.projectList ? `
             <div class="slide__project-list">
               <h3>${escapeHtml(chapter.projectList.title || 'Projects')}</h3>
@@ -482,12 +486,13 @@
             
             
             ${projectListHtml}
-            <p
+            ${projectFootnotesHtml}
+            ${(chapter.visual?.caption || '') ? `<p
               class="slide__chapter-caption"
               data-editable="true"
               data-edit-chapter-index="${index}"
               data-edit-path="visual.caption"
-            >${escapeHtml(chapter.visual?.caption || '')}</p>
+            >${escapeHtml(chapter.visual?.caption || '')}</p>` : ''}
           </section>
         `;
       }
@@ -513,7 +518,7 @@
           </section>
         `;
       }
-      const bodyMarkup = (isFocusMapChapter || isPlantingColumnsChapter || isPriorityCardsChapter || isProgramCardsChapter || isHeroImageChapter) ? `${bodyRight}` : `${bodyLeft}${bodyRight}${newsletterHtml}`;
+      const bodyMarkup = (isFocusMapChapter || isPlantingColumnsChapter || isPriorityCardsChapter || isProgramCardsChapter || isHeroImageChapter) ? `${bodyRight}` : `${bodyLeft}${newsletterHtml}${bodyRight}`;
       const chapterIcon = landingIconByChapterId[chapter.id] || 'article';
       const chapterName = chapter.navLabel || chapter.id || chapter.headline || 'Presentation';
       const chapterHeaderIconColor = getLandingPaletteColorForChapterId(chapter.id);
