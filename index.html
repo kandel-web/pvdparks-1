@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loading…</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <link rel="stylesheet" href="styles.css?v=20260317z" />
+</head>
+<body>
+  <div id="app" class="app">
+    <header class="top-bar" aria-label="Presentation controls and title">
+      <div class="top-bar__brand">
+        <img id="brandLogo" class="brand-logo" alt="" hidden />
+        <div class="brand-text">
+          <p id="brandKicker" class="brand-kicker"></p>
+          <h1 id="presentationTitle" class="brand-title"></h1>
+        </div>
+      </div>
+
+      <div class="top-bar__actions">
+        <button id="textEditToggle" class="control-btn" type="button" aria-pressed="false"></button>
+        <button id="exportJsonBtn" class="control-btn" type="button"></button>
+        <button id="presenterToggle" class="control-btn" type="button" aria-pressed="false"></button>
+        <button id="printToggle" class="control-btn" type="button" aria-pressed="false"></button>
+      </div>
+    </header>
+
+    <main class="stage-wrap">
+      <aside class="chapter-rail" aria-label="Chapters">
+        <ol id="chapterList" class="chapter-list"></ol>
+      </aside>
+
+      <section class="stage" aria-live="polite">
+        <section id="landingScreen" class="landing-screen" aria-label="Roger Williams Park chapter map">
+          <div class="landing-screen__hero">
+            <div class="landing-screen__hero-top">
+              <img id="landingBrandLogo" class="landing-screen__logo" alt="" hidden />
+            </div>
+            <!--
+            <h2 id="landingTitle" class="landing-screen__title"></h2>
+            <p id="landingSubtitle" class="landing-screen__subtitle"></p>
+            -->
+            <div class="landing-screen__headline">
+  <h2 id="landingTitle" class="landing-screen__title"></h2>
+  <p id="landingSubtitle" class="landing-screen__subtitle"></p>
+</div>
+          </div>
+          <div id="landingMap" class="landing-map" role="navigation" aria-label="Chapter icon map"></div>
+        </section>
+        <button id="floatingMapBtn" class="floating-map-btn" type="button" aria-label="">
+          <img id="floatingMapLogo" class="floating-map-btn__logo" alt="" hidden />
+        </button>
+        <div id="slideContainer" class="slide-container"></div>
+      </section>
+    </main>
+
+    <footer class="bottom-nav" aria-label="Slide navigation">
+      <button id="prevBtn" class="nav-btn" type="button"></button>
+      <button id="mapHomeBtn" class="nav-btn" type="button"></button>
+      <div class="nav-status">
+        <span id="chapterCounter"></span>
+        <span class="nav-status__dot">•</span>
+        <span id="chapterName"></span>
+      </div>
+      <button id="nextBtn" class="nav-btn nav-btn--primary" type="button"></button>
+    </footer>
+  </div>
+
+  <noscript>
+    <div id="noScriptMsg" class="no-script"></div>
+  </noscript>
+
+  <!-- Content is loaded from this separate file -->
+  <script src="content.js?v=20260318a"></script>
+  <script src="script.js?v=20260318a"></script>
+</body>
+</html>
