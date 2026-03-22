@@ -293,7 +293,7 @@ window.SITE_CONTENT = {
       {
         title: "Maximize Our Parks\u2019 Value",
         color: "#485330",
-        intro: "Maximize the value of the investments we have made in our parks by transitioning from new construction to ongoing excellence.",
+        intro: "Maximize the value of the investments we have made in our parks by transitioning from new construction to ongoing excellence, ensuring that our parks continue to feel fresh and valuable overtime.",
         items: [
           "Plan for the lifecycle of park assets and amenities with holistic, proactive strategies for long-term sustainability.",
           "Highlight the value of past investments through visible, high-quality upkeep that excites and engages the community.",
@@ -303,7 +303,7 @@ window.SITE_CONTENT = {
       {
         title: "Share Our Story",
         color: "#62AA63",
-        intro: "Foster a deep sense of ownership and pride by building a compelling narrative around the parks\u2019 importance to the community.",
+        intro: "Foster a deep sense of ownership and pride by building a compelling narrative around the parks' importance to the community and their role in enhancing public wellbeing.",
         items: [
           "Inspire community pride by celebrating natural assets, park investments, and venues while welcoming visitors from near and far.",
           "Create consistent, unified messaging to showcase how parks serve as community anchors and contributors to well-being.",
@@ -313,7 +313,7 @@ window.SITE_CONTENT = {
       {
         title: "Build a Generative Future",
         color: "#98C8C1",
-        intro: "Cultivate strategic partnerships, diversify revenue streams, and plan proactively for long-term sustainability and continuing impact.",
+        intro: "Cultivate strategic partnerships, diversify revenue streams, and plan proactively to ensure long-term sustainability and continuing meaningful impact.",
         items: [
           "Plan for long-term sustainability by diversifying budgets for park upgrades and ensuring financial nimbleness.",
           "Collaborate effectively to amplify resources and support iconic projects while laying groundwork for future initiatives.",
@@ -361,6 +361,8 @@ window.SITE_CONTENT = {
         local: "assets/rwp-museum-exterior.jpg",
         remote: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Museum_of_Natural_History_and_Planetarium_in_Roger_Williams_Park.jpg/1280px-Museum_of_Natural_History_and_Planetarium_in_Roger_Williams_Park.jpg"
       },
+      "historic-playground": { local: "assets/playground.jpeg" },
+      "historic-gateway-garage": { local: "assets/gateway-garage.jpeg" },
       "historic-bandstand": { local: "assets/AdobeStock_529557285.jpeg" },
       "historic-boathouse": {
         local: "assets/rwp-boathouse-exterior.jpg",
@@ -684,6 +686,32 @@ window.SITE_CONTENT = {
                 "Type of Improvement": "Concrete repair at drum wall",
                 "Implementation Notes": "Drum wall deterioration requires patching and stabilization to maintain structural integrity. Repair materials will be matched to the original concrete mix for visual consistency. Work can be completed outside of peak event season.",
                 "Description": "The Bandstand is a Victorian-era open-air performance structure used for community gatherings and seasonal concerts within the park."
+              }
+            },
+            {
+              id: "historic-playground",
+              name: "Playground",
+              layer: "historic",
+              shape: "point",
+              point: [33.5, 62.0],
+              latLng: [41.782674, -71.415401],
+              zoom: { scale: 3.0, center: [33.5, 62.0] },
+              details: {
+                "Location": "Playground",
+                "Type of Improvement": "Playground renovations"
+              }
+            },
+            {
+              id: "historic-gateway-garage",
+              name: "Gateway Garage",
+              layer: "historic",
+              shape: "point",
+              point: [58.0, 10.0],
+              latLng: [41.793181, -71.408744],
+              zoom: { scale: 3.0, center: [58.0, 10.0] },
+              details: {
+                "Location": "Gateway Garage",
+                "Type of Improvement": "Garage renovations and HVAC insulation"
               }
             },
             {
